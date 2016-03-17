@@ -14,9 +14,7 @@ namespace RPG_Game_Binding_of_ROB
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Game g = new Game(); g.Start();
         }
     }
 }
