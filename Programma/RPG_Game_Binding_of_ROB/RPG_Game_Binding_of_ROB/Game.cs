@@ -15,6 +15,8 @@ namespace RPG_Game_Binding_of_ROB
             RenderWindow window = new RenderWindow(new VideoMode(800, 600), "RPG Binding of Isaac,Robbert,Odin & Barry");
             window.SetFramerateLimit(60);
 
+            Map newworld = new Map(100, 100);
+            newworld.Draw(window);
             window.Closed += new EventHandler(OnClosed);
 
             while (window.IsOpen)
@@ -27,8 +29,8 @@ namespace RPG_Game_Binding_of_ROB
 
         void OnClosed(object sender, EventArgs e)
         {
-            Window window = (Window)sender;
-            window.Close();
+            window window = (window)sender;
+            
         }
     }
 }
